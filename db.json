@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "user": [
+    {
+      "name": "naruto",
+      "email": "sasuke@naruto.com",
+      "password": "11223344",
+      "mobile": "123123123",
+      "id": 1
+    },
+    {
+      "id": 3,
+      "name": "goku",
+      "email": "asdasd",
+      "mobile": "1231312"
+    },
+    {
+      "name": "nice",
+      "email": "asda",
+      "password": "1234",
+      "mobile": "24112a",
+      "id": 4
+    },
+    {
+      "id": 6,
+      "name": "asfafasfasfasfasf",
+      "email": "hdfhjfdgjhfg",
+      "mobile": "63463"
+    },
+    {
+      "id": 7,
+      "name": "asdasdas",
+      "email": "sdgfcv",
+      "mobile": "3541541"
+    },
+    {
+      "id": 8,
+      "name": "asafasfasf",
+      "email": "gsdgsdgsdg",
+      "mobile": "142141"
+    },
+    {
+      "id": 9,
+      "name": "asfdasfas",
+      "email": "asfasfasfa",
+      "mobile": "41241"
+    },
+    {
+      "id": 10,
+      "name": "hfghfdgjfdgj",
+      "email": "asfasfas",
+      "mobile": "4124124"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

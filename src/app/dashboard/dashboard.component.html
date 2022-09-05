@@ -1,0 +1,78 @@
+
+<header class="header">
+    <h2 class="logo" >User List And Management</h2>
+    <div>
+        <a class="cta" (click)="showModal(); onClickShow()">Add User</a>
+        <a class="cta" routerLink="/login">Logout</a>
+    </div>
+    
+    
+</header>
+
+<div >
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Sr. No</th>
+                <th>id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of userData; let i = index">
+                <td>{{i}}</td>
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.mobile}}</td>
+                <td>
+                    <button type="button" class="button">
+                        <span (click)="showModal()" (click)="onEdit(user)"  class="button__text">Edit</span>
+                     </button> 
+                     <button id="delete" type="button" class="button">
+                        <span (click)="deleteUser(user)" class="button__text">Delete</span>
+                    </button>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<div id="myModa" class=" modal" *ngIf="show == true" >
+    <div class="content  modal-content">
+      
+      <h2>Add a user<span id = "cancelled" (click)="showModal()" class="close">&times;</span></h2>
+      
+     
+      
+      <form [formGroup]="userList" id="contact" ngNativeValidate (ngSubmit)="addUserData()">
+        <div class="field">
+          <span class="fa fa-user"></span>
+          <input formControlName="name" type="text" required="" placeholder="Name *" name="name" >
+        </div>
+        <div class="field space">
+          <span class="fa fa-envelope"></span>
+          <input formControlName="email" type="text" required="" placeholder="Email *" name="email" >
+        </div>
+        <div class="field space">
+          <span class="fa fa-mobile"></span>
+          <input formControlName="mobile" type="text" required="" placeholder="Phone No. *" name="mobile" >
+        </div>
+       
+        <div id="submit" class="field space">
+          <input  *ngIf="showAdd" type="submit" value="Add" >
+          <input *ngIf="showUp" type="update" (click)=" updateUser()" value="Update" >
+        </div>
+      </form>
+      
+    </div>
+  </div>
+    

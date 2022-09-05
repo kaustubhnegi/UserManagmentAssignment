@@ -1,0 +1,185 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    
+  }
+.bg-img .content {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%, -50%);
+  /* background: rgba(255, 255, 255, 0.04); */
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+ }
+.content {
+  background: url("~assets/images/banners/spiti-1.jpg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 15px 32px 45px 32px;
+  width: 370px;
+  transform: translate(-50%, -50%);
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+}
+.content h2 {
+  color: white;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0; 
+  position: relative;
+}
+.field {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255, 255, 255, 0.94);
+}
+.field span {
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.field input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px; 
+}
+.space {
+    margin-top: 16px;
+  }
+  
+
+.content .show {
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  /* display: none; */
+  cursor: pointer; 
+  }
+  .pass-key:valid ~ .show {
+  display: block;
+  }
+  .pass {
+  text-align: left;
+  /* margin: 10px 0; */
+  }
+  .pass a {
+  color: white;
+  text-decoration: none; 
+  }
+  .pass:hover a {
+  text-decoration: underline;
+  }
+.field select {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #222;
+    font-size: 16px; 
+    margin: 0px 10px 0px -2px;
+  }
+.field input[type="submit"] {
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer; 
+}
+.field select[type="submit"] {
+    background: #3498db;
+    border: 1px solid #2691d9;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer; 
+  }
+.field input[type="submit"]:hover {
+  background: #2691d9;
+}
+.field select[type="submit"]:hover {
+    background: #2691d9;
+  }
+  
+  
+.field input[type="update"] {
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer; 
+}
+.field select[type="update"] {
+    background: #3498db;
+    border: 1px solid #2691d9;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer; 
+  }
+.field input[type="update"]:hover {
+  background: #2691d9;
+}
+.field select[type="update"]:hover {
+    background: #2691d9;
+  }
+
+
+
+
+
+
+.signup {
+padding-top: 1rem;
+font-size: 15px;
+color: white; 
+}
+.signup a {
+color: #3498db;
+text-decoration: none;
+}
+.signup a:hover {
+text-decoration: underline;
+}
+.signin {
+padding-top: 1rem;
+font-size: 15px;
+color: white; 
+}
+.signin a {
+color: #3498db;
+text-decoration: none;
+}
+.signin a:hover {
+text-decoration: underline;
+}

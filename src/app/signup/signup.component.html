@@ -1,0 +1,36 @@
+<div class="bg-img">
+    <div class="content">
+      <h2>Register a user</h2>
+      <form [formGroup]="registerForm" (ngSubmit)="signUp()">
+        
+        <div class="field space">
+          <span class="fa fa-user"></span>
+          <input formControlName="name" type="text" required placeholder="Name *" #userName>
+        </div>
+
+        <div class="field space">
+          <span class="fa fa-envelope"></span>
+          <input formControlName="email" type="text" required placeholder="Email *" #userEmail>
+        </div> 
+
+        <div class="field space">
+          <span class="fa fa-mobile"></span>
+          <input formControlName="mobile" type="text" required placeholder="Phone No. *" #userPhone>
+        </div>
+        
+        <div class="field space">
+          <span class="fa fa-lock"></span>
+          <input  formControlName="password" type="password"  required placeholder="Password *" #userPass>
+          <span class="show">SHOW</span>
+        </div>
+        
+        <div class="field space">
+          <input type="submit" value="Submit" >
+        </div>
+
+      </form>      
+      <div class="signin">Have a account?
+        <a routerLink="/login">Login Now</a>
+      </div>
+    </div>
+  </div>

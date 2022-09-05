@@ -1,0 +1,188 @@
+.styled-table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    /* border-radius: 5px 5px 0px 0px; */
+    overflow: hidden;
+    width: 100%;
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    /* text-align: left; */
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+
+
+
+
+#myModa .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+#myModa .close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}  
+#myModa.modal {
+  /* Hidden by default */
+  display: block; 
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+
+}
+#myModa .content {
+  background: url("src/assets/images/banners/spiti-1.jpg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 15px 32px 45px 32px;
+  width: 370px;
+  transform: translate(-50%, -50%);
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    background-color: #24252a;
+  }
+  
+  .logo {
+    cursor: pointer;
+    color: #0088a9
+  }
+  
+  
+  .cta {
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+ 
+  
+  .cta {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    margin: 0 2.5px 0 2.5px;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+
+  .button {
+    display: inline-flex;
+    height: 30px;
+    padding: 0;
+    margin: 0 2.5px 0 2.5px;
+    background: #009578;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  #delete.button{
+    background: #a11800;
+  }
+  #delete.button:hover{
+    background: #740800;
+  }
+  #delete.button:active{
+    background: #740800;
+  }
+  .button:hover {
+    background: #008168;
+  }
+  
+  .button:active {
+    background: #006e58;
+  }
+  
+  .button__text {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 10px;
+    color: #fff;
+    height: 100%;
+  }
+  
+  
+  
